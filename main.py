@@ -16,8 +16,6 @@ table = soup.find('div', class_='mw-body-content mw-content-ltr').find('table', 
 #Ключі до майбутнього словника
 keys = ['country', 'full_country_name', 'same_letter_count', 'flag_url']
 
-#links_on_flags = soup.find('table', class_='wikitable').findAll('span', class_='flagicon')
-
 #Робимо списки окремо по кожній країні (ця інформація в подальшому буде використана для створення словників по країнах)
 list_information = []
 for block in table:
